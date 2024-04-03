@@ -1,0 +1,15 @@
+set(PROJECT_NAME MultiCameraExample)
+set(PROJECT_SOURCES
+    ${CMAKE_CURRENT_SOURCE_DIR}/${PROJECT_NAME}.cpp
+)
+
+add_executable(${PROJECT_NAME} ${PROJECT_SOURCES})
+
+include_directories(${PCO_FOLDER})
+include_directories(${PCO_FOLDER}/include)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE pco_convert)
+target_link_libraries(${PROJECT_NAME} PRIVATE sc2_cam)
+target_link_libraries(${PROJECT_NAME} PRIVATE pco_recorder)
+
+install(TARGETS ${PROJECT_NAME})
