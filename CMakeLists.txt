@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20 FATAL_ERROR)
-project(samples-pco-cpp
+project(samples-pco-recorder
     VERSION 1.0.0
-    DESCRIPTION "Simple examples showing the use of pco.cpp"
+    DESCRIPTION "Simple examples showing the use of pco.recorder"
     LANGUAGES CXX)
 
 set(CMAKE_BUILD_RPATH "\$ORIGIN;\$ORIGIN/lib")
