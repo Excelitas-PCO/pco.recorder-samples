@@ -114,13 +114,6 @@ This specifies the root path to your installation of the **pco.cpp** package.
 Our default here is the system wide installation path, so normally you do not need to change it.  
 If you installed pco.cpp on windows as user, you need to adapt this to the actual installation path of pco.cpp
 
-#### QT_ROOT_DIR
-**This is only relevant for building the ImageViewer demo**
-
-This specifies the root path to your Qt installation. 
-Our default is Qt 6.4.2 with the default folder Qt suggests.  
-*You need to adapt this to the actual Qt install path on your system*
-
 #### AUTO_UPDATE_PCO_PACKAGE
 If this flag is set to true, the *./externals/pco/CMakeLists.txt* will automatically update the **pco.cpp** related files from the pco.cpp install path, e.g. when you install a new version of pco.cpp the examples will automatically be updated on the next reconfiguration.
 
