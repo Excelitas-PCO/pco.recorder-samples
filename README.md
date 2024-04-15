@@ -30,7 +30,7 @@ CMakeLists.txt
 both on windows and linux platforms
 
 All examples are in the **src** subfolder.  
-The **externals/pco** folder contains also a **CMakeLists.txt** file which handles the pco.cpp dependencies
+The **externals/pco** folder contains also a **CMakeLists.txt** file which handles the pco.recorder dependencies
 
 ## Sample Description
 
@@ -110,11 +110,11 @@ This defines where the files should be installed to when calling ```cmake --inst
 Our default here is *<preset name>/install*, so e.g. *release_lnx/install* for the *release_lnx* preset
 
 #### PCO_PACKAGE_INSTALL_DIR
-This specifies the root path to your installation of the **pco.cpp** package.  
+This specifies the root path to your installation of the **pco.recorder** package.  
 Our default here is the system wide installation path, so normally you do not need to change it.  
-If you installed pco.cpp on windows as user, you need to adapt this to the actual installation path of pco.cpp
+If you installed pco.recorder on windows as user, you need to adapt this to the actual installation path of pco.recorder
 
 #### AUTO_UPDATE_PCO_PACKAGE
-If this flag is set to true, the *./externals/pco/CMakeLists.txt* will automatically update the **pco.cpp** related files from the pco.cpp install path, e.g. when you install a new version of pco.cpp the examples will automatically be updated on the next reconfiguration.
+If this flag is set to true, the *./externals/pco/CMakeLists.txt* will automatically update the **pco.recorder** related files from the pco.recorder install path, e.g. when you install a new version of pco.recorder the examples will automatically be updated on the next reconfiguration.
 
 If you want to disable this mechanism, just set ```"AUTO_UPDATE_PCO_PACKAGE": false``` 
