@@ -6,6 +6,19 @@ If you are looking for a more high-level, easier, API, please have a look at our
 [pco.cpp](https://www.excelitas.com/product/pco-software-development-kits#custom-tab-c__) package and the corresponding
 [pco.cpp-samples](https://github.com/Excelitas-PCO/pco.cpp-samples) on GitHub.
 
+## Requirements
+- Windows or Linux 
+
+When using "x64 Native Tools Command Prompt for VS 2022" 
+- Visual Studio 2019/2022
+- QT for MSVC 2019
+
+or when using a terminal
+- Ninja Make
+- CMake
+- Any CPP Compiler, e.g. minGW
+- QT for minGW/your compiler
+
 ## Project Structure
  
 ```
