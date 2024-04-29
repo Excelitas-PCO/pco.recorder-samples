@@ -9,7 +9,7 @@ If you are looking for a more high-level, easier, API, please have a look at our
 ## Requirements
 - Windows or Linux 
 
-When using "x64 Native Tools Command Prompt for VS 2022" 
+When using "x64 Native Tools Command Prompt for VS 2019/2022" 
 - Visual Studio 2019/2022
 
 or when using a terminal
