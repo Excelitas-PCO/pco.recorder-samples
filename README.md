@@ -7,12 +7,13 @@ If you are looking for a more high-level, easier, API, please have a look at our
 [pco.cpp-samples](https://github.com/Excelitas-PCO/pco.cpp-samples) on GitHub.
 
 ## Requirements
+General:
 - Windows or Linux 
 
-When using "x64 Native Tools Command Prompt for VS 2019/2022" 
+When using "x64 Native Tools Command Prompt for VS 2019/2022": 
 - Visual Studio 2019/2022
 
-or when using a terminal
+or when using a terminal:
 - Ninja Make
 - CMake
 - Any CPP Compiler, e.g. minGW
@@ -38,7 +39,7 @@ CMakeLists.txt
 ```
 
 **CMakeLists.txt** is the main cmake file and **CMakePresets.json** contains already predefined presets for building debug and release,
-both on windows and linux platforms
+both on Windows and Linux platforms
 
 All examples are in the **src** subfolder.  
 The **externals/pco** folder contains also a **CMakeLists.txt** file which handles the pco.recorder dependencies
@@ -51,7 +52,7 @@ This is a small console application which
 1. Opens a camera
 2. Sets an exposure time
 3. Records a sequence of images
-   - Start Record
+   - Start record
    - Wait until finished
 4. For all recorded images
   - Copy the image from recorder
@@ -98,34 +99,34 @@ If you need very accurate synchronization, we highly recommend using external tr
 ## Installation
 
 To use this example project you can either clone, fork or download the source code. 
-After you have configured everything to your needs you can simply configure, build and install it using cmake.
+After you have configured everything to your needs, you can simply configure, build and install it using cmake.
 
 ### Configuration
 
-The **CMakePresets.json** contain already predefined configurations for cmake builds on windows and linux.  
+The **CMakePresets.json** contain already predefined configurations for cmake builds on Windows and Linux.  
 
 Beside of the preset name and description we have the following variables which you can configure to your needs: 
 
 #### generator 
-Here we use *Ninja* as it is available both on linux and on windows systems, but you can of course change this
+Here we use *Ninja* as it is available both on Linux and on Windows systems, but you can of course change this.
 
 #### binaryDir
 This defines where the build files go to.  
-Our default here is *<preset name>/build*, so e.g. *release_lnx/build* for the *release_lnx* preset
+Our default here is *<preset name>/build*, so e.g. *release_lnx/build* for the *release_lnx* preset.
 
 #### CMAKE_BUILD_TYPE
-Build type. This matches with our preset names
+Build type. This matches with our preset names.
 
 #### CMAKE_INSTALL_PREFIX
-This defines where the files should be installed to when calling ```cmake --install```
-Our default here is *<preset name>/install*, so e.g. *release_lnx/install* for the *release_lnx* preset
+This defines where the files should be installed to when calling ```cmake --install```.
+Our default here is *<preset name>/install*, so e.g. *release_lnx/install* for the *release_lnx* preset.
 
 #### PCO_PACKAGE_INSTALL_DIR
 This specifies the root path to your installation of the **pco.recorder** package.  
 Our default here is the system wide installation path, so normally you do not need to change it.  
-If you installed pco.recorder on windows as user, you need to adapt this to the actual installation path of pco.recorder
+If you installed pco.recorder on Windows as user, you need to adapt this to the actual installation path of pco.recorder.
 
 #### AUTO_UPDATE_PCO_PACKAGE
-If this flag is set to true, the *./externals/pco/CMakeLists.txt* will automatically update the **pco.recorder** related files from the pco.recorder install path, e.g. when you install a new version of pco.recorder the examples will automatically be updated on the next reconfiguration.
+If this flag is set to true, the *./externals/pco/CMakeLists.txt* will automatically update the **pco.recorder** related files from the pco.recorder install path, e.g. when you install a new version of pco.recorder, the examples will automatically be updated on the next reconfiguration.
 
-If you want to disable this mechanism, just set ```"AUTO_UPDATE_PCO_PACKAGE": false``` 
+If you want to disable this mechanism, just set ```"AUTO_UPDATE_PCO_PACKAGE": false``` .
