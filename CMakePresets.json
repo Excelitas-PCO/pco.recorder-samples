@@ -26,7 +26,7 @@
         "PCO_PACKAGE_INSTALL_DIR": "C:/Program Files/PCO Digital Camera Toolbox/pco.recorder",
         "AUTO_UPDATE_PCO_PACKAGE": true
       }
-    }
+    },
     {
       "name": "debug_lnx",
       "displayName": "Debug x64 Linux",
