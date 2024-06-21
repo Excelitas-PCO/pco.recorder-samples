@@ -2,32 +2,6 @@
   "version": 2,
   "configurePresets": [
     {
-      "name": "debug_lnx",
-      "displayName": "Debug x64 Linux",
-      "description": "Debug for Linux systems.",
-      "generator": "Ninja",
-      "binaryDir": "${sourceDir}/${presetName}/build",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_INSTALL_PREFIX": "${sourceDir}/${presetName}/install",
-        "PCO_PACKAGE_INSTALL_DIR": "/opt/pco/pco.recorder",
-        "AUTO_UPDATE_PCO_PACKAGE": true
-      }
-    },
-    {
-      "name": "release_lnx",
-      "displayName": "Release x64 Linux",
-      "description": "Release for Linux systems.",
-      "generator": "Ninja",
-      "binaryDir": "${sourceDir}/${presetName}/build",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release",
-        "CMAKE_INSTALL_PREFIX": "${sourceDir}/${presetName}/install",
-        "PCO_PACKAGE_INSTALL_DIR": "/opt/pco/pco.recorder",
-        "AUTO_UPDATE_PCO_PACKAGE": true
-      }
-    },
-    {
       "name": "debug_x64",
       "displayName": "Debug x64 Windows",
       "description": "Debug for Windows Systems",
@@ -50,6 +24,32 @@
         "CMAKE_BUILD_TYPE": "Release",
         "CMAKE_INSTALL_PREFIX": "${sourceDir}/${presetName}/install",
         "PCO_PACKAGE_INSTALL_DIR": "C:/Program Files/PCO Digital Camera Toolbox/pco.recorder",
+        "AUTO_UPDATE_PCO_PACKAGE": true
+      }
+    }
+    {
+      "name": "debug_lnx",
+      "displayName": "Debug x64 Linux",
+      "description": "Debug for Linux systems.",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/${presetName}/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/${presetName}/install",
+        "PCO_PACKAGE_INSTALL_DIR": "/opt/pco/pco.recorder",
+        "AUTO_UPDATE_PCO_PACKAGE": true
+      }
+    },
+    {
+      "name": "release_lnx",
+      "displayName": "Release x64 Linux",
+      "description": "Release for Linux systems.",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/${presetName}/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/${presetName}/install",
+        "PCO_PACKAGE_INSTALL_DIR": "/opt/pco/pco.recorder",
         "AUTO_UPDATE_PCO_PACKAGE": true
       }
     }
