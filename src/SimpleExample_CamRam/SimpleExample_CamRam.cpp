@@ -69,6 +69,10 @@ int main()
         PCO_CleanupLib();
         return -1;
     }
+    else
+    {
+        printf("Camera connected\n");
+    }
     //Make sure recording is off
     iRet = PCO_SetRecordingState(hCamArr[0], 0);
     //switch to sequence mode
@@ -103,6 +107,14 @@ int main()
     //Init Recorder for segment 1 as example, for sequential readout
     iRet = PCO_RecorderInit(hRec, reqImgCountArr, CAMCOUNT,
         PCO_RECORDER_CAMRAM_SEQUENTIAL, 0, NULL, &ramSegment);
+    (iRet != PCO_NOERROR)
+    {
+        printf("Could not Init the camera with the error code: %X\n", iRet);
+        printf("Press <Enter> to end\n");
+        iRet = getchar();
+        PCO_CleanupLib();
+        return -1;
+    }
 
     //Get number of images already in cameras internal memory
     iRet = PCO_RecorderGetStatus(hRec, hCamArr[0], NULL, NULL, NULL,
